@@ -19,13 +19,13 @@ const InformesViewData = () => {
         datasets: [
             {
                 label: 'Apuestas por día',
-                backgroundColor: '#42A5F5',
-                data: [65, 59, 80, 81, 56, 55, 40]
+                backgroundColor: '#6930c3',
+                data: [24, 61, 31, 55, 80, 60, 70]
             },
             {
                 label: 'Altas por día',
-                backgroundColor: '#FFA726',
-                data: [28, 48, 40, 19, 86, 27, 90]
+                backgroundColor: '#252525',
+                data: [88, 68, 60, 89, 26, 77, 15]
             }
         ]
     };
