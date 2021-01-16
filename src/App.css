@@ -24,7 +24,9 @@ a {
   background-color: yellow;
   color: navy;
 }
-
+.p-chart{
+  width: 1200px;
+}
 
 .menu li{
   list-style: none;
