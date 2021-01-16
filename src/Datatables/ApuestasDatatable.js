@@ -75,7 +75,7 @@ const ApuestasDatatable = () => {
         hideDialog();
 
         var dt = new Datos();
-        dt.crearMercados(selectedItem);
+        dt.postMercados(selectedItem);
 
     }
     const cancelMerc = () => {

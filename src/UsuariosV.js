@@ -15,7 +15,14 @@ export default class Datos {
     getEventos() {
         return axios.get('http://localhost:54446/api/eventos').then(res => res.data);
     }
-    
+
+    postEventos(evento){
+        return axios.post('http://localhost:54446/api/evento/', evento)
+    }
+
+    deleteEvento(eventoId){
+        return axios.delete('http://localhost:54446/api/eventos/' + eventoId)
+    }
     getApuestas() {
         return axios.get('http://localhost:54446/api/apuestas').then(res => res.data);
     }
