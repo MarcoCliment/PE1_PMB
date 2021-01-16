@@ -8,9 +8,14 @@ export default class Datos {
     deleteUsuarios(email){
         return axios.delete('http://localhost:54446/api/usuarios/' + email)
     }
+    postMercados(mercado){
+        return axios.post('http://localhost:54446/api/mercados/' + mercado)
+    }
+
     getEventos() {
         return axios.get('http://localhost:54446/api/eventos').then(res => res.data);
     }
+    
     getApuestas() {
         return axios.get('http://localhost:54446/api/apuestas').then(res => res.data);
     }
