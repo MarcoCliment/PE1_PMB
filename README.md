@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Proyecto Backoffice PlaceMyBet
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Alumno: Marco Antonio Climent Heras
+2ºDam ONLINE
+Programa Multimedia y de dispositivos móviles
 
-## Available Scripts
+## Cómo instalar
 
-In the project directory, you can run:
+1-Descargar el dump de base de datos adjunto al programa e importarlo, ejecutar la api en una aplicación como Visual Studio(puerto 54446)
+2-Instalar Visual Studio Code y abrir el proyecto
+3-Ejecutar con npm run start (conectado al puerto 3000)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Vistas disponibles
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Estas son las vistas disponibles en nuestra primera versión de la aplicación
 
-### `npm test`
+### Usuarios
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![vista usuarios](https://i.gyazo.com/ba56ed8fad4142be0361d5f9920cc2ad.png)
 
-### `npm run build`
+La vista de usuarios mediante Datatable nos muestra un listado de los usuarios registrados ordenados por su email, dando opción a filtrar específicamente, restablecer la contraseña de un usuario o eliminarlo de la base de datos.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Eventos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Vista eventos](https://i.gyazo.com/4940cab6b2e469e99104689c07a77045.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+La vista de eventos nos ofrece un listado de los eventos próximos a jugar de manera ordenada. Los botones nos permiten editar fecha y hora del partido, eliminarlo o añadir uno nuevo
 
-### `npm run eject`
+### Apuestas
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Vista Apuestas](https://i.gyazo.com/10f2635dd69497bbb1595e3097a10dac.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A petición del cliente añadimos las funcionalidades de mostrar las apuestas, filtrar, añadir nuevos mercados de apuesta(mostrado en la imagen más adelante) y bloquear un mercado para evitar posteriores apuestas.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![Vista apuestas2](https://i.gyazo.com/6b49751d76b3a4900cb49591c39ed735.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Informes
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Vista Informes](https://i.gyazo.com/0114487518ef5b396816f814744754b8.png)
+Aquí podemos ver una gráfica con las apuestas por día(morado) y altas de usuario por día(negro) generada por nuestra aplicación mediante el uso de PrimeReact/Bar
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Queda pendiente implementar el backend, los datos mostrados en esta imagen son de ejemplo.**
 
-### Code Splitting
+## En conclusión
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Solo se ha usado Primereact como librería, ocasionalmente recurriendo a Axios para el manejo del backend de una manera más simple
